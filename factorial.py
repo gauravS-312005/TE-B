@@ -1,12 +1,10 @@
-# Program to calculate factorial of 5 numbers
+num = int(input("Enter a number: "))
 
-for i in range(5):
-    num = int(input("Enter a number: "))
-    factorial = 1
+factorial = 1
 
-    if num < 0:
-        print("Factorial does not exist for negative numbers ❌")
-    else:
-        for j in range(1, num + 1):
-            factorial *= j
-        print(f"Factorial of {num} is {factorial} ✅\n")
+if num < 0:
+    print("Factorial does not exist for negative numbers ❌")
+else:
+    for i in range(1, num + 1):
+        factorial *= i
+    print(f"Factorial of {num} is {factorial} ✅")
